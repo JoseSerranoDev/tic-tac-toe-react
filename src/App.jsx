@@ -28,7 +28,6 @@ export default function App() {
     const [board, setBoard] = useState(initialBoard);
 
     const handleClick = (index) => {
-
         if (board[index] || winner) return;
 
         // update board
@@ -53,7 +52,7 @@ export default function App() {
 
         // check full board
         if (newBoard.every((square) => square !== null)) {
-          setWinner("draw");
+            setWinner("draw");
         }
     };
 
