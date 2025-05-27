@@ -1,0 +1,65 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.square p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.turn-board {
+  display: flex;
+  gap: 2rem;
+}
+
+.active {
+  border: 1px solid rgb(36, 197, 247);
+  background-color: rgb(80, 214, 248);
+}
+
+.reset-game {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.reset-game p {
+  font-size: 1.2rem;
+}
+
+.reset-game span {
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.reset-game button {
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
